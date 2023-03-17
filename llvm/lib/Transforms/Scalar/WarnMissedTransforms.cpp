@@ -85,8 +85,8 @@ static void warnAboutLeftoverTransformations(Loop *L,
 
 static void warnAboutLeftoverTransformations(Function *F, LoopInfo *LI,
                                              OptimizationRemarkEmitter *ORE) {
-  for (auto *L : LI->getLoopsInPreorder())
-    warnAboutLeftoverTransformations(L, ORE);
+  // for (auto *L : LI->getLoopsInPreorder())
+  //   warnAboutLeftoverTransformations(L, ORE);
 }
 
 // New pass manager boilerplate
